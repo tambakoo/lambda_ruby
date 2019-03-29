@@ -14,16 +14,17 @@ def hello(event:, context:)
 end
 
 def get_data_proxy(event:, context:)
-	lambda_boy.invoke({
-                         function_name: 'portal-poetry-dev-get_data_proxy'
+	Aws::Lambda::Client.new(region: 'us-east-2').invoke({
+                         function_name: 'portal-poetry-dev-get_data'
                        })
 
 	# system("sls invoke local -f get_data -d '#{event}'")
 end
 
 def get_data(event:, context:)
-	data = data_scraper(event)
-	return data.css('.HeroContent').css('.HeroTextContent').text.strip
+	return "It purr-fect"
+	# data = data_scraper(event)
+	# return data.css('.HeroContent').css('.HeroTextContent').text.strip
 end
 
 def up?(event:, context:)
