@@ -68,6 +68,8 @@ functions:
     handler: handler.get_data_proxy
   get_data:
     handler: handler.get_data
+  show_contents:
+    handler: handler.show_contents
 
   # another_hello:
   #   handler: handler.hello_again
