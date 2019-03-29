@@ -56,14 +56,14 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
-    events:
-     - http:
-         path: message/{name}
-         method: get
-  up:
-    handler: handler.up?
+  # hello:
+  #   handler: handler.hello
+  #   events:
+  #    - http:
+  #        path: message/{name}
+  #        method: get
+  # up:
+  #   handler: handler.up?
   get_data_proxy:
     handler: handler.get_data_proxy
   get_data:
