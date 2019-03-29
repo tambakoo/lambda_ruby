@@ -22,7 +22,7 @@ def get_data_proxy(event:, context:)
 end
 
 def get_data(event:, context:)
-	return "It purr-fect"
+	return "It live"
 	# data = data_scraper(event)
 	# return data.css('.HeroContent').css('.HeroTextContent').text.strip
 end
