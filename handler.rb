@@ -1,5 +1,4 @@
 require 'json'
-require 'net/ping'
 require 'nokogiri'
 require 'open-uri'
 require 'aws-sdk'
